@@ -30,7 +30,7 @@ Desired_SPL_speech = 70; % desired level, in dB spl, to calibrate the input spee
 SNR = [5 10 15 20];  % desired signal-to-noise ratio (i.e. difference between the speech and noise amplitudes)
 
 plot_figs = 1; % option to plot the figures (1=yes and 0=no)
-save_figs = 1; % option to save the figures (1=yes and 0=no)
+save_figs = 0; % option to save the figures (1=yes and 0=no)
 
 fig_sound_nametag = {'S_01_08_WhiteNoise_SNR_5',...
                      'S_01_08_WhiteNoise_SNR_10',...
@@ -39,7 +39,7 @@ fig_sound_nametag = {'S_01_08_WhiteNoise_SNR_5',...
                  
 figures_dir = 'C:\Users\greco\Desktop\StA_Speech_Intelligibility_Github\signals\generated\figs\';  % string with the folder where the figures shall be saved
 
-save_sound = 1; % option to save the generated sound file (1=yes and 0=no)
+save_sound = 0; % option to save the generated sound file (1=yes and 0=no)
 sound_dir = 'C:\Users\greco\Desktop\StA_Speech_Intelligibility_Github\signals\generated\'; % string with the folder where the sound file shall be saved
 
 %% generate speech + white noise function

@@ -98,7 +98,7 @@ Calibrated_WhiteNoise = WhiteNoise.*10.^( (WhiteNoise_levelOut - WhiteNoise_leve
 %% generate speech + white noise signal
 
 SpeechWhiteNoise = ones(length(TimeVector),1); % declaring variable for memory allocation
-SpeechWhiteNoise = SpeechSignal + Calibrated_WhiteNoise;
+SpeechWhiteNoise = Calibrated_SpeechSignal + Calibrated_WhiteNoise;
 
 %% plots (pressure over time, amplitude in linear scale)
 
